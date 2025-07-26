@@ -1,3 +1,4 @@
+cd
 # Project-503 : Blog Page Application (Django) deployed on AWS Application Load Balancer with Auto Scaling, S3, Relational Database Service(RDS), VPC's Components, DynamoDB and Cloudfront with Route 53 (SOLUTION)
 
 ## Description
@@ -19,7 +20,7 @@ The Clarusway Blog Page Application aims to deploy blog application as a web app
         tenancy: default (Aynen EC2 daki dedicate mantığına göre hazırlanan bir servis. Kendimize dedice edebiliriz bu VPC yi)
         After creating VPC, some services are created automatically along with it. For example Route table or NACL table ---> !!! SHOW MAIN ROUTE TABLE !!! This is the main route table and we are gonna use this route table as either public route table or private route table. We'll see this a couple of steps later.
 
-    - Ok, After creating VPC, the first thing we need to do, select VPC, click `Actions` and `enable DNS hostnames` for the `aws-capstone-vpc`. If we do not enable this, a DNS host name won't be assigned to any the machines under this VPC and these machines will not be able to communicate with each other. They need a DNS for this.
+    - Ok, After creating VPC, the first thing we need to do, select VPC, click `Actions` and `enable DNS hostnames` for the `aws-capstone-vpc`. If we do not enable this, a DNS host name won't be assigned to any of the machines under this VPC and these machines will not be able to communicate with each other. They need a DNS for this.
 
     ## Subnets
     - So, now, we can create subnets. In this example, we are gonna create 2 public and 2 private subnets within 2 AZs. Each subnet's block must be covered by `10.90.0.0/16`. They are going to be /24 subnet masks. Subnet masks of Subnets can be shown on below; 
