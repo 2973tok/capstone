@@ -283,9 +283,9 @@ aws ec2 run-instances --image-id ami-0aa210fd2121a98b7 --instance-type t2.micro 
 aws ec2 run-instances \
   --image-id ami-0aa210fd2121a98b7 \
   --instance-type t2.micro \
-  --key-name nargiz \
-  --security-group-ids sg-01b62a1676de80952 \
-  --subnet-id subnet-07f163a9614a66886
+  --key-name ayse \
+  --security-group-ids sg-0fd26f064a276a8e5 \
+  --subnet-id subnet-0e69eae7a3b80bf6d
 
 
 
